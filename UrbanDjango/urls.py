@@ -19,6 +19,7 @@ from django.urls import path
 
 from task2.views import Index1, index2
 from task4.views import index, store, cart
+from task5.views import sign_up_by_html, sign_up_by_django
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,5 +27,7 @@ urlpatterns = [
     path('index2/', index2),
     path('platform/', index),
     path('platform/store/', store),
-    path('platform/cart/', cart)
+    path('platform/cart/', cart),
+    path('sign_up_by_html/', sign_up_by_html),
+    path('sign_up_by_django/', sign_up_by_django)
 ]
